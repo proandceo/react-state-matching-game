@@ -21,8 +21,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">Turbo-Matcher</header>
         <OptionsPanel
-          playing={this.props.playing}
-          numTiles={this.props.numTiles}
+          playing={this.state.playing}
+          numTiles={this.state.numTiles}
         />
         <Board />
       </div>
