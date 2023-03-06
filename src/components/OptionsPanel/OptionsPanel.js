@@ -1,15 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import Button from '../Button'
-import TileSelector from '../TileSelector'
+import Button from "../Button";
+import TileSelector from "../TileSelector";
+import App from "../App/App";
 
-const OptionsPanel = () => (
+const OptionsPanel = (props) => (
   <div>
-    <TileSelector />
+    <TileSelector numTitles={props.numTitles} />
     <Button />
   </div>
-)
-  
-  
+);
 
-export default OptionsPanel
+export default OptionsPanel;
