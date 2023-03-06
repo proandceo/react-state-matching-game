@@ -18,12 +18,12 @@ class App extends Component {
   }
 
   startGame = (numTiles) => {
-    this.setState((state) => {
-      playing: true;
-      previousTileIndex: null;
-      toBeCleared: null;
-      titles: createTiles(state.numTiles);
-    });
+    this.setState((state) => ({
+      playing: true,
+      previousTileIndex: null,
+      toBeCleared: null,
+      titles: createTiles(state.numTiles),
+    }));
   };
 
   render() {
