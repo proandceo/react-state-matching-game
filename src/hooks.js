@@ -4,9 +4,13 @@ const useHover = () => {
   const ref = useRef();
   const [hovered, setHovered] = useState(false);
 
+  const enter = () => {
+    setHovered(true);
+  };
   useEffect(() => {
     const refCopy = ref;
-    refCopy.current.addEventListener("mouseenter", () => {});
+    refCopy.current.addEventListener("mouseenter", enter);
+    refCopy.current.addEventListener("mouseleave", () => {});
     return () => {};
   });
 
