@@ -40,6 +40,8 @@ class App extends Component {
         tiles[selectedTileIndex].selected = true;
       }
 
+      tiles[selectedTileIndex].selected = true;
+
       if (previousTileIndex !== null) {
         const previousTile = tiles[previousTileIndex];
         const selectedTile = tiles[selectedTileIndex];
