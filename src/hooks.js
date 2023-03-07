@@ -17,8 +17,8 @@ const useHover = () => {
     refCopy.current.addEventListener("mouseenter", enter);
     refCopy.current.addEventListener("mouseleave", leave);
     return () => {
-      ref.refCopy.current.removeEventListener("mouseenter", enter);
-      ref.refCopy.current.removeEventListener("mouseleave", leave);
+      refCopy.current.removeEventListener("mouseenter", enter);
+      refCopy.current.removeEventListener("mouseleave", leave);
     };
   });
 
