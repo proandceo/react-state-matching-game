@@ -9,7 +9,7 @@ const useHover = () => {
   };
 
   const leave = () => {
-    setHovered(true);
+    setHovered(false);
   };
 
   useEffect(() => {
