@@ -1,12 +1,5 @@
 import React from "react";
 
-createContext = () => {
-  numTiles: 36;
-  playing: false;
-  handleNumTileChange: () => {};
-  startPlaying: () => {};
-};
-
-const GameContext = () => {};
+const GameContext = React.createContext();
 
 export default GameContext;
