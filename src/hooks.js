@@ -8,7 +8,7 @@ const useHover = () => {
     return;
   };
 
-  return { ref, hovered };
+  return [ref, hovered];
 };
 
 export default useHover;
