@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import OptionsPanel from "../OptionsPanel";
 import Board from "../Board";
 import { createTiles, indexOfSelected } from "../../misc/utils";
+import GameContext from "../../GameContext";
 
 import "./App.css";
 
@@ -73,6 +74,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">Turbo-Matcher</header>
+        <GameContext.Provider value={state} />
         <OptionsPanel
           playing={this.state.playing}
           numTiles={this.state.numTiles}
