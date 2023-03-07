@@ -33,7 +33,7 @@ class App extends Component {
         <OptionsPanel
           playing={this.state.playing}
           numTiles={this.state.numTiles}
-          startGame={this.props.startGame}
+          startGame={this.state.startGame}
         />
         <Board numTiles={this.state.numTiles} tiles={this.state.tiles} />
       </div>
