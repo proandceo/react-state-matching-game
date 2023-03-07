@@ -26,6 +26,13 @@ class App extends Component {
     }));
   };
 
+  handleTileClicked = (id, color) => {
+    return this.setState((state) => ({
+      tiles: state.tiles,
+      toBeCleared: state.toBeCleared,
+    }));
+  };
+
   render() {
     return (
       <div className="App">
